@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="device-width initial-scale=1.0">
+        <title>Easy Bank Landing Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--------navigation------->
+        <div class="navbar">
+            <img src="images/logo.svg">
+            <nav id="navlinks">
+                <img src="images/icon-close.svg" onclick="hideMenu()" class="show hide">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Careers</a></li>
+                </ul>
+            </nav>
+            <img src="images/icon-hamburger.svg" onclick="showMenu()" class="show" id="show">
+            <a href="" class="play">Request Invite</a>
+        </div>
+        <!------container page------>
+        <div class="banner">
+            <div class="banner-text">
+                <h1>Next generation<br> digital banking</h1>
+                <p>Take your financial life online. Your Easybank account<br> will be a one-stop-shop for spending, saving,<br> budgeting, investing, and much more.</p>
+                <a href="" class="play-btn">Request Invite</a>
+            </div>
+            <div class="banner-img">
+                <img src="images/image-mockups.png" class="image2">
+            </div>
+        </div>
+
+        <div class="choose">
+            <div class="choose-text">
+                <h2>Why choose Easybank? </h2>
+                <p>We leverage Open Banking to turn your bank account into your financial hub.<br> Control your finances like never before.</p>
+            </div>
+            <div class="choose-box">
+                <div class="box">
+                    <img src="images/icon-online.svg">
+                    <h5>Online Banking</h5>
+                    <p>Our modern web and mobile<br> applications allow you to keep<br> track of your finances wherever you<br> are in the world.</p>
+                </div>
+                <div class="box">
+                    <img src="images/icon-budgeting.svg">
+                    <h5>Simple Budgeting</h5>
+                    <p>See exactly where your money<br> goes each month. Receive<br> notifications when you’re close to <br>hitting your limits.</p>
+                </div>
+                <div class="box">
+                    <img src="images/icon-onboarding.svg">
+                    <h5>Fast Onboarding</h5>
+                    <p>We don’t do branches. Open your<br> account in minutes online and start<br> taking control of your finances<br> right away.</p>
+                </div>
+                <div class="box">
+                    <img src="images/icon-api.svg">
+                    <h5>Open API</h5>
+                    <p>Manage your savings, investments,<br> pension, and much more from one<br> account. Tracking your money has<br> never been easier. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="article">
+            <h4>Latest Articles</h4>
+            <div class="article-box">
+                <div class="box1">
+                    <img src="images/image-currency.jpg">
+                    <div class="padd">
+                        <p class="smalll"><small>By Claire Robinson</small></p>
+                        <h5>Receive money in any currency with no fees</h5>
+                        <p class="big">The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single … </p>
+                    </div> 
+                </div>
+                <div class="box1">
+                    <img src="images/image-restaurant.jpg">
+                    <div class="padd">
+                        <p class="smalll"><small>By Wilson Hutton</small></p>
+                        <h5>Treat yourself without worrying about money</h5>
+                        <p class="big">Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you …</p>
+                    </div>
+                </div>
+                <div class="box1">
+                    <img src="images/image-plane.jpg">
+                    <div class="padd">
+                        <p class="smalll"><small>By Wilson Hutton</small></p>
+                        <h5>Take your Easybank card wherever you go</h5>
+                        <p class="big">We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you …</p>
+                    </div>
+                </div>
+                <div class="box1">
+                    <img src="images/image-confetti.jpg">
+                    <div class="padd">
+                        <p class="smalll"><small>By Claire Robinson</small></p>
+                        <h5>Our invite-only Beta accounts are now live!</h5>
+                        <p class="big">After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site …</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="foot">
+            <div class="foot1">
+                <img src="images/logo.svg" class="log">
+                <div class="foott">
+                    <a href=""><img src="images/icon-facebook.svg"></a>
+                    <a href=""><img src="images/icon-youtube.svg"></a>
+                    <a href=""><img src="images/icon-twitter.svg"></a>
+                    <a href=""><img src="images/icon-pinterest.svg"></a>
+                    <a href=""><img src="images/icon-instagram.svg"></a>
+                </div>
+                
+            </div>
+            <div class="foot1 fot">
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Blog</a></li>
+            </div>
+            <div class="foot1 foot2">
+                <li><a href="">Careers</a></li>
+                <li><a href="">Support</a></li>
+                <li><a href="">Privacy Policy</a></li>
+            </div>
+            <div class="foot1 foot3">
+                <a href="">Request Invite</a>
+                <p>Easybank.All Rights Reserved</p>
+            </div>
+        </div>
+
+
+
+        <script>
+            let navLinks = document.getElementById("navlinks");
+            let showMe = document.getElementById("show");
+            function showMenu(){
+                navLinks.style.top = "0";
+                showMe.style.display ="none";
+            }
+
+            function hideMenu(){
+                navLinks.style.top = "-280px";
+                showMe.style.display = "block";
+            }
+        </script>
+    </body>
+</html>
